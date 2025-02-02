@@ -18,7 +18,17 @@ public class ImageUtils {
 
     public static boolean saveImage(Image image, String filename) {
         try {
-            File output = new File(filename + ".png");
+            // Get Documents folder path and create ImageSaver directory
+            String documentsPath = System.getProperty("user.home") + File.separator + "Documents" + File.separator
+                    + "ImageSaver";
+            File directory = new File(documentsPath);
+            if (!directory.exists()) {
+                directory.mkdirs();
+            }
+
+            // Create file in the ImageSaver directory
+            File output = new File(directory, filename + ".png");
+
             return ImageIO.write(
                     SwingFXUtils.fromFXImage(image, null),
                     "png",

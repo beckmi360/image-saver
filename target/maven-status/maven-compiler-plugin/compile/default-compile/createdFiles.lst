@@ -8,6 +8,7 @@ com\imagesaver\view\PreviewPanel.class
 com\imagesaver\util\StyleUtils.class
 com\imagesaver\util\ImageUtils.class
 com\imagesaver\view\NotesPanel.class
+module-info.class
 com\imagesaver\util\BorderRenderer.class
 com\imagesaver\util\PreviewManager.class
 com\imagesaver\view\ImageSaverUI.class

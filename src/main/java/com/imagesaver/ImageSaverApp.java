@@ -21,7 +21,7 @@ public class ImageSaverApp extends Application {
                         "-fx-accent: #000080;" +
                         "-fx-focus-color: #000080;");
 
-        primaryStage.setTitle("Image Save Application");
+        primaryStage.setTitle("Image-Saver");
         primaryStage.setScene(scene);
         primaryStage.setMinWidth(WINDOW_WIDTH);
         primaryStage.setMinHeight(WINDOW_HEIGHT);
